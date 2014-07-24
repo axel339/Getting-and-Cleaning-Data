@@ -5,7 +5,7 @@ ID <- read.table(sprintf("UCI HAR Dataset/%s/subject_%s.txt",type,type))
 names(ID) <- "subject.ID"
 
 # Getting set specific activities labels
-df_activities <- read.table(sprintf("Data//UCI HAR Dataset//%s//y_%s.txt",type,type))
+df_activities <- read.table(sprintf("UCI HAR Dataset//%s//y_%s.txt",type,type))
 df_activities[df_activities==1] <- as.character(act[1,2])
 df_activities[df_activities==2] <- as.character(act[2,2])
 df_activities[df_activities==3] <- as.character(act[3,2])
@@ -41,3 +41,4 @@ features_labels <- features[features_indices,2]
 test_df <- half_df(activities,features_indices,features_labels,"test")
 train_df <- half_df(activities,features_indices,features_labels,"train")
 final_df <- rbind(train_df,test_df)
+write.table(final_df,"Tidy.txt")
