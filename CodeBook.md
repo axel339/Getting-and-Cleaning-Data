@@ -2,7 +2,7 @@
 
 ## Loading and summarizing the data
 
-The 3 first columns have been defined in the processing step with run_analysis.R. They correspond respectively to the subject ID, the corresponding activity, and whether the subject is part of the training or the test set. All the other features have been selected so that the final dataset only considers the features calculating the mean or the standard deviation of a specific feature.
+The 3 first columns have been defined in the processing step with run_analysis.R. They correspond respectively to the subject ID, the activity performed, and whether the subject is part of the training or the test set. All the other features have been selected so that the final dataset only considers the features calculating the mean or the standard deviation of a specific feature.
 
 As the `summary` and `str` functions indicate, there are only 30 unique identifiers, 6 types of activities and 2 types of training (Test/Train). All the means and stard deviations of the other features have been normalized beforehand.
 
