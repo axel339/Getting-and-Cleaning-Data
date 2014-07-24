@@ -15,3 +15,5 @@ The function itself will look for the different files and bind them together in 
 Finally, it will bind all of this together and using the `type` of the dataset which has been input (train or test), it will create a column `$type` to be able to distinguish them.
 
 Ultimately, after the function calles for both types, it will stack them on top of each other so that we end up with a dataset merging training and test data together, with only the features we're interested in and the activities and the features labeled properly using the different files provided.
+
+For further analysis of the dataset, you will want to use the read.table() function with header=TRUE
