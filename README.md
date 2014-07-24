@@ -4,9 +4,9 @@ Getting-and-Cleaning-Data Course project
 
 ### run_analysis.R
 
-The script works with one function to which it is necessary to provide the argument `type` as it will then look for the test or training dataset accordingly.
+The script works with one function for which it is necessary to provide the argument `type` as it will then look for the test or training dataset accordingly.
 
-Ahead of the function call, this script processes the information that is common for both dataset, i.e. the activity labels and the features indices and labels.
+Ahead of the function call, this script processes the information that is common for both dataset, i.e. the activity labels and the features indices and labels by looking at the files provided.
 
 It will then feed the function with these 4 arguments : the type of the dataset, the features indices, features labels and activities labels.
 
